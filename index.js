@@ -1,4 +1,4 @@
-let label = document.querySelector("#label #conter");
+let counter = document.querySelector("#conter");
 let btn1 = document.querySelector(".btnIncrese");
 let btn2 = document.querySelector(".btnDecrease");
 let btn3 = document.querySelector(".btnReset");
@@ -9,7 +9,7 @@ let count = 0;
 btn1.addEventListener("click", (e) => {
   audio.play();
   count += 1;
-  label.innerText = count;
+  counter.innerText = count;
   console.log(count);
 });
 
@@ -20,13 +20,13 @@ btn2.addEventListener("click", (e) => {
   } else {
     count -= 1;
   }
-  label.innerText = count;
+  counter.innerText = count;
   console.log(count);
 });
 
 btn3.addEventListener("click", (e) => {
   audio.play();
   count = 0;
-  label.innerText = count;
+  counter.innerText = count;
   console.log(count);
 });
